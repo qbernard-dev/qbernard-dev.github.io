@@ -8,6 +8,11 @@ h2 {
   border-bottom: 2px solid var(--secondary-color);
 }
 
+/* Texte */
+p{
+  text-align: justifys;
+}
+
 /* Formation */
 .formation-item {
   margin-bottom: 20px;
