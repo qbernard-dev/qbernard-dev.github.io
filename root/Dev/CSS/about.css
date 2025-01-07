@@ -10,7 +10,7 @@ h2 {
 
 /* Texte */
 p{
-  text-align: justifys;
+  text-align: justify;
 }
 
 /* Formation */
@@ -36,6 +36,7 @@ p{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+  align-items: start;
 }
 
 .skill-item {
@@ -49,4 +50,21 @@ p{
 
 .skill-item:hover {
   background-color: var(--secondary-color);
+}
+
+.languages {
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+  display: none;
+  text-align: center;
+}
+
+.skill:hover .languages {
+  display: block;
+}
+
+/* Button */
+.button:hover {
+  transform: scale(1.0);
 }

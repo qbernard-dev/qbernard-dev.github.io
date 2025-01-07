@@ -107,7 +107,7 @@ footer .icon:hover {
     font-size: 1rem;
     border-radius: 5px;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.6);
 }
 
@@ -127,7 +127,7 @@ footer .icon:hover {
 /* Transitions et responsive */
 a,
 button {
-    transition: all 0.3s;
+    transition: ease-in-out 0.3s;
 }
 
 @media (max-width: 768px) {
