@@ -8,7 +8,7 @@
     <title>Projets - Quentin Bernard</title>
     <link rel="stylesheet" href="../CSS/global.css">
     <link rel="stylesheet" href="../CSS/projects.css">
-    <script src="../script.js"></script>
+    <script src="../script.js" defer></script>
 </head>
 
 <body>
@@ -21,62 +21,57 @@
             <a href="./contact.html">Contact</a>
             <a href="#cv">CV</a>
             <button id="mode-toggle" class="button">Mode Clair</button>
-        </nav> 
+        </nav>
     </header>
 
     <main>
         <section id="projects-section">
             <h1>Mes Projets</h1>
-        
+
             <!-- Projet 1 -->
-            <div class="project-row section">
-                <div class="project-number"></div> <!-- Numéro du projet -->
+            <div class="project-row section" data-technologies="HTML, CSS, JavaScript, MySQL">
                 <div class="project-text">
                     <h2>Application de gestion</h2>
-                    <p>
-                        Développement d'une application complète de gestion des tâches. 
-                        <strong>Compétences :</strong> développer des applications, gérer des données, travail d'équipe.
-                    </p>
+                    <p>Développement d'une application complète de gestion des tâches.</p>   
+                    <p><strong>Compétences :</strong> développer des applications, gérer des données, travail d'équipe.</p>
                 </div>
                 <div class="project-image">
                     <img src="../../Image/project1.jpg" alt="Application de gestion">
                 </div>
+                <div class="project-technologies">
+                    <button>Classe</button>
+                </div>
             </div>
-        
+
             <!-- Projet 2 -->
-            <div class="project-row reverse section">
-                <div class="project-number"></div> <!-- Numéro du projet -->
+            <div class="project-row reverse section" data-technologies="Node.js, Express, MongoDB, Docker">
                 <div class="project-text">
                     <h2>Optimisation système</h2>
-                    <p>
-                        Travail sur la performance des systèmes et applications.
-                        <strong>Compétences :</strong> optimiser des applications, administrer des systèmes.
-                    </p>
+                    <p>Travail sur la performance des systèmes et applications.</p>
+                    <p><strong>Compétences :</strong> optimiser des applications, administrer des systèmes.</p>       
                 </div>
                 <div class="project-image">
                     <img src="../../Image/project2.jpg" alt="Optimisation système">
                 </div>
+                <div class="project-technologies"></div>
             </div>
-        
+
             <!-- Projet 3 -->
-            <div class="project-row section">
-                <div class="project-number"></div> <!-- Numéro du projet -->
+            <div class="project-row section" data-technologies="Python, Django, PostgreSQL, AWS">
                 <div class="project-text">
                     <h2>Gestion de projet collaboratif</h2>
-                    <p>
-                        Mise en place et suivi d'un projet collaboratif en équipe. 
-                        <strong>Compétences :</strong> conduite de projet, travail d'équipe.
-                    </p>
+                    <p>Mise en place et suivi d'un projet collaboratif en équipe.</p>
+                    <p><strong>Technologies utilisés :</strong> conduite de projet, travail d'équipe.</p>
                 </div>
                 <div class="project-image">
                     <img src="../../Image/project3.jpg" alt="Gestion de projet collaboratif">
                 </div>
+                <div class="project-technologies"></div>
             </div>
-        
+
         </section>
-        
     </main>
-</body>
+
     <footer>
         <div class="social-icons">
             <img src="../../Image/github.svg" alt="Icon GitHub" class="icon github">
@@ -86,6 +81,6 @@
         </div>
         <p>&copy; 2024 Quentin Bernard</p>
     </footer>
-
+</body>
 
 </html>

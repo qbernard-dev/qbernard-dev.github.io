@@ -19,18 +19,23 @@
     justify-content: center;
     margin-bottom: 50px;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .project-row.reverse {
     flex-direction: row-reverse;
 }
 
-.project-row:hover{
+.project-row:hover {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(0, 223, 252, 0.8), 0 0 30px rgba(0, 255, 133, 0.6);
 }
 
 /* Texte du projet */
+strong{
+    color: var(--secondary-color);
+}
+
 .project-text {
     flex: 1;
     padding: 20px;
@@ -63,6 +68,27 @@
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+/* Technologies (boutons) */
+.project-technologies {
+    margin-top: 20px;
+    text-align: start;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.project-technologies button {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.project-technologies button:hover {
+    background-color: var(--secondary-color);
+}
 
 /* Responsive */
 @media (max-width: 768px) {
