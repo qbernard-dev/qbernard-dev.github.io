@@ -1,13 +1,9 @@
-// script.js
 document.addEventListener("DOMContentLoaded", function() {
     const modeToggleButton = document.getElementById('mode-toggle');
-
-    // Vérifier le mode actuel stocké dans localStorage ou utiliser le mode sombre par défaut
     let currentMode = localStorage.getItem('mode') || 'dark';
     setMode(currentMode);
 
     modeToggleButton.addEventListener('click', function() {
-        // Toggle entre 'dark' et 'light'
         currentMode = currentMode === 'dark' ? 'light' : 'dark';
         setMode(currentMode);
         localStorage.setItem('mode', currentMode);
