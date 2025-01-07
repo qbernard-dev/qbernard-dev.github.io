@@ -1,0 +1,60 @@
+/* Section principale */
+#contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    gap: 20px; /* Espace entre les enfants */
+    background-color: var(--background-color);
+}
+
+/* Uniformiser la taille des enfants */
+#contact-info > div {
+    flex: 1; /* Tous les enfants prennent la même largeur */
+    max-width: 400px; /* Optionnel : limite la taille maximale */
+}
+
+/* Avatar */
+.contact-avatar img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid var(--primary-color);
+    object-fit: cover;
+}
+
+
+/* Titre */
+.contact-details h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Boutons de lien */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacement entre les boutons */
+    margin-top: 30px;
+}
+
+.social-links a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a.button:hover {
+    background-color: var(--secondary-color);
+}
+ 
+#contact-info {
+    height: auto; 
+    min-height: 300px; 
+}

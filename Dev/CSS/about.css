@@ -1,0 +1,47 @@
+/* about.css */
+
+/* Section principale */
+h2 {
+  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+/* Formation */
+.formation-item {
+  margin-bottom: 20px;
+  border-left: 3px solid var(--primary-color);
+  padding-left: 15px;
+}
+
+.formation-item h3 {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.formation-item span {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.skill-item {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.skill-item:hover {
+  background-color: var(--secondary-color);
+}

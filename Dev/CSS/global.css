@@ -1,0 +1,142 @@
+/* global.css */
+
+/* Définition des variables */
+:root {
+    --font-family: 'Roboto Mono', monospace;
+    --primary-color: #00DFFC; /* Bleu néon */
+    --secondary-color: #00FF85; /* Vert néon */
+    --background-color: #1E1E1E;
+    --text-color: #EAEAEA;
+    --accent-color: #121212;
+    --hover-color: #00FF85;
+}
+
+/* Mode clair */
+.light-mode {
+    --background-color: #FFFFFF;
+    --text-color: #333333;
+    --accent-color: #F4F4F4;
+    --primary-color: #007bff;
+    --secondary-color: #00FF85;
+}
+
+/* Footer bas de page */
+html, body {
+    height: 100%; 
+    margin: 0; 
+}
+
+/* Général */
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Links */
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+/* Header commun */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent-color);
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header .logo {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+header nav a {
+    margin: 0 15px;
+    font-weight: 600;
+}
+
+/* Footer commun */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Icônes sociales */
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+footer .icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+footer .icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 255, 133, 0.8);
+}
+
+.button {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.6);
+}
+
+.button:hover {
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    box-shadow: 0 0 15px rgba(0, 223, 252, 0.8), 0 0 30px rgba(0, 255, 133, 0.6);
+    transform: scale(1.1);
+}
+
+.section {
+    padding: 20px 40px;
+    margin: 50px 150px;
+    background-color: var(--accent-color);
+    border-radius: 1.5em;
+}
+
+/* Transitions et responsive */
+a,
+button {
+    transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .avatar img {
+        margin-top: 20px;
+    }
+}

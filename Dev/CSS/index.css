@@ -1,0 +1,31 @@
+/* index.css */
+
+/* Section principale */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.intro h1 {
+    font-size: 3rem;
+    color: var(--text-color);
+}
+
+.intro .highlight {
+    color: var(--primary-color);
+}
+
+.intro .age {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+/* Avatar */
+.avatar img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 5px solid var(--primary-color);
+}
