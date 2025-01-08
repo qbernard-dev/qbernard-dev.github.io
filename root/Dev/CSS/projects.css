@@ -82,13 +82,8 @@ strong{
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
 }
 
-.project-technologies button:hover {
-    background-color: var(--secondary-color);
-}
 
 /* Responsive */
 @media (max-width: 768px) {
