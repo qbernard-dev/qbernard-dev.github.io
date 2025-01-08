@@ -16,11 +16,15 @@
 
 /* Avatar */
 .contact-avatar img {
-    width: 400px;
-    height: 400px;
+    width: 365px;
+    height: 365px;
     border-radius: 50%;
     border: 5px solid var(--primary-color);
     object-fit: cover;
+}
+
+.contact-avatar img:hover {
+    box-shadow: 0 0 15px var(--primary-color);
 }
 
 
