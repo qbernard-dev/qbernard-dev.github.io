@@ -122,6 +122,20 @@ footer .icon:hover {
     border-radius: 1.5em;
 }
 
+/* Avatar */
+.avatar {
+    width: 365px;
+    height: 365px;
+    border-radius: 50%;
+    border: 5px solid var(--primary-color);
+    object-fit: cover;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.avatar:hover {
+    box-shadow: 0 0 15px var(--primary-color);
+}
+
 /* Transitions et responsive */
 a,
 button {
