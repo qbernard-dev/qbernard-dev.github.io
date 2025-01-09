@@ -19,7 +19,7 @@
 }
 
 /* Header */  
-nav a.active {
+.title_color{
     color: var(--primary-color); /* Couleur pour la page active */
     font-weight: bold;
 }

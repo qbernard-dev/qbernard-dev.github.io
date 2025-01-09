@@ -7,7 +7,8 @@
   <link rel="stylesheet" href="../CSS/global.css"> <!-- Inclure le CSS global -->
   <link rel="stylesheet" href="../CSS/index.css"> <!-- Inclure le CSS spécifique à la page -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <script src="../light&dark.js"></script>
+  <script src="../JS/light&dark.js"></script>
+  <script src="../JS/header.js"></script>
 </head>
 <body>
   <header>
@@ -43,24 +44,4 @@
     <p>&copy; 2024 Quentin Bernard</p>
   </footer>
 </body>
-
-<script>
-function setActive(element) {
-  // Supprime la classe active de tous les liens
-  const navLinks = document.querySelectorAll("nav a");
-  navLinks.forEach((link) => {
-    link.classList.remove("active");
-  });
-
-  // Ajoute la classe active au lien cliqué
-  element.classList.add("active");
-}
-
-// Par défaut, "Accueil" a la classe active
-window.onload = () => {
-  const defaultLink = document.querySelector('nav a[href="./index.html"]');
-  defaultLink.classList.add("active");
-};
-</script>
-
 </html>
