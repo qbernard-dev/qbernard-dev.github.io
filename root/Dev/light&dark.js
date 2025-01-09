@@ -1,3 +1,4 @@
+/* Light and dark mode */
 document.addEventListener("DOMContentLoaded", function() {
     const modeToggleButton = document.getElementById('mode-toggle');
     let currentMode = localStorage.getItem('mode') || 'dark';

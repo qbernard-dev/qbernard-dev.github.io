@@ -18,6 +18,12 @@
     --secondary-color: #00FF85;
 }
 
+/* Header */  
+nav a.active {
+    color: var(--primary-color); /* Couleur pour la page active */
+    font-weight: bold;
+}
+
 /* Footer bas de page */
 html, body {
     height: 100%; 
