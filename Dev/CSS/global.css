@@ -78,6 +78,11 @@ footer {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+footer img{
+    width: 30px;
+    height: 30px;
+}
+
 
 /* Icônes sociales */
 footer .social-icons {
@@ -87,8 +92,6 @@ footer .social-icons {
 }
 
 footer .icon {
-    width: 30px;
-    height: 30px;
     margin: 0 10px;
     background-color: var(--secondary-color);
     border-radius: 50%;
