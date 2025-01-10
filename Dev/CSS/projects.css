@@ -87,10 +87,8 @@ strong{
 
 .project-technologies a:hover {
     box-shadow: 4px 4px 10px var(--primary-color); /* Ombre à droite et en bas */
-}
+} 
 
-
-  
 /* Responsive */
 @media (max-width: 768px) {
     .project-row {
