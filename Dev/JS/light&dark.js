@@ -14,11 +14,11 @@ document.addEventListener("DOMContentLoaded", function() {
         if (mode === 'light') {
             document.body.classList.remove('dark-mode');
             document.body.classList.add('light-mode');
-            modeToggleButton.textContent = "Mode Sombre";
+            modeToggleButton.textContent = "Dark";
         } else {
             document.body.classList.remove('light-mode');
             document.body.classList.add('dark-mode');
-            modeToggleButton.textContent = "Mode Clair";
+            modeToggleButton.textContent = "Light";
         }
     }
 });

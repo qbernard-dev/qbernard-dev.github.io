@@ -1,5 +1,5 @@
 /* Section principale */
-#contact-info {
+.contact-info {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,7 +9,7 @@
 }
 
 
-#contact-info > div {
+.contact-info > div {
     flex: 1; /* Tous les enfants prennent la même largeur */
     max-width: 400px; /* Optionnel : limite la taille maximale */
 }
