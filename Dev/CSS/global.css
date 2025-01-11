@@ -82,6 +82,7 @@ header nav a {
 footer {
     text-align: center;
     padding: 20px;
+    padding-bottom: 0;
     background-color: var(--accent-color);
     color: var(--text-color);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
