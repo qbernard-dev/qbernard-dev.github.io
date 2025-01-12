@@ -49,3 +49,49 @@
     height: auto; 
     min-height: 300px; 
 }
+
+@media (max-width: 1024px) {
+    .contact-info {
+        gap: 50px;
+        padding: 40px;
+    }
+
+    .contact-info > div {
+        max-width: 90%;
+    }
+
+    .contact-details h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Pour les écrans plus petits (mobiles) */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .contact-info > div {
+        max-width: 100%;
+        text-align: center;
+    }
+
+}
+
+/* Pour les très petits écrans (mobiles très petits) */
+@media (max-width: 470px) {
+    .contact-info {
+        gap: 20px;
+        padding: 15px;
+    }
+
+    .contact-info > div {
+        max-width: 100%;
+    }
+
+    .contact-details h2 {
+        font-size: 1.4rem;
+    }
+}
