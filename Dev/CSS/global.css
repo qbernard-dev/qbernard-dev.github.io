@@ -159,6 +159,10 @@ button {
     transition: ease-in-out 0.3s;
 }
 
+.burger{
+    display: none;
+}
+
 @media (max-width: 470px) {   
         /* Boutons */
         .button {
@@ -209,7 +213,7 @@ button {
 
     /* Style du bouton burger */
 .burger {
-    display: none; /* Masqué par défaut pour les écrans larges */
+    display: block;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
