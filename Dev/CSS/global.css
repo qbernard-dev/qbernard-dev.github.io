@@ -159,13 +159,133 @@ button {
     transition: ease-in-out 0.3s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 470px) {   
+        /* Boutons */
+        .button {
+            font-size: 0.9rem;
+            padding: 8px 15px;
+        }
+
+        
+    /* Avatar */
+    .avatar {
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    /* Section */
+    .section {
+        padding: 15px;
+        margin: 20px;
+    }
+
     .hero {
         flex-direction: column;
+        padding: 20px;
         text-align: center;
     }
 
-    .avatar img {
-        margin-top: 20px;
+    header {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 15px;
     }
+
+    header .logo {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    header nav a {
+        font-size: 1rem;
+    }
+
+    /* Style du bouton burger */
+.burger {
+    display: none; /* Masqué par défaut pour les écrans larges */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.burger span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: var(--text-color);
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navigation */
+#nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+#nav-links a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* Navigation cachée sur mobile */
+#nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: var(--accent-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    z-index: 5;
+}
+
+#nav-links a {
+    margin: 10px 0;
+}
+
+/* Afficher le menu quand actif */
+#nav-links.active {
+    display: flex;
+}
+
+/* Animation du burger */
+.burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Afficher le bouton burger sur mobile */
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+
+    #nav-links {
+        display: none;
+    }
+}
+
 }

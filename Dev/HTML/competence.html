@@ -10,20 +10,26 @@
     <link rel="stylesheet" href="../CSS/competence.css">
     <script src="../JS/light&dark.js"></script>
     <script src="../JS/header.js"></script>
+    <script src="../JS/burger.js"></script>
 </head>
 
 <body>
     <header>
-            <a class="logo" alt="logo QB" href="../../index.html">QB</a>
-            <nav>
-              <a href="../../index.html">Accueil</a>
-              <a href="./about.html">À propos</a>
-              <a href="./projects.html">Projets</a>
-              <a href="./contact.html">Contact</a>
-              <a href="./mon_cv.pdf" target="_blank">CV</a>
-              <button id="mode-toggle" class="button"></button>
-          </nav> 
-        </header>
+        <a class="logo" alt="logo QB" href="./index.html">QB</a>
+        <button id="burger-menu" class="burger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="nav-links">
+            <a href="../../index.html">Accueil</a>
+            <a href="./about.html">À propos</a>
+            <a href="./projects.html">Projets</a>
+            <a href="./contact.html">Contact</a>
+            <a href="./mon_cv.pdf" target="_blank">CV</a>
+            <button id="mode-toggle" class="button"></button>
+        </nav>
+      </header> 
 
       <main>
         <a  href="./projects.html"><button class="button">Retour aux projets</button></a>

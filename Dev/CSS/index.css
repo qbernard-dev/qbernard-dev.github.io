@@ -33,3 +33,17 @@
 .taf{
     font-size: 1.5rem;
 }
+
+@media (max-width: 480px) {
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .taf {
+        font-size: 1.2rem;
+    }
+
+    .intro .age {
+        font-size: 1rem;
+    }
+}

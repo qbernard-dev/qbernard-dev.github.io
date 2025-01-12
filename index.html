@@ -8,29 +8,34 @@
   <link rel="stylesheet" href="./Dev/CSS/index.css">
   <script src="./Dev/JS/header.js"></script>
   <script src="./Dev/JS/light&dark.js"></script>
+  <script src="./Dev/JS/burger.js"></script>
 </head>
 <body>
   <header>
     <a class="logo" alt="logo QB" href="./index.html">QB</a>
-    <nav>
+    <button id="burger-menu" class="burger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="nav-links">
       <a href="index.html">Accueil</a>
       <a href="./Dev/HTML/about.html">À propos</a>
       <a href="./Dev/HTML/projects.html">Projets</a>
       <a href="./Dev/HTML/contact.html">Contact</a>
       <a href="./mon_cv.pdf" target="_blank">CV</a>
-      <button id="mode-toggle" class="button"></button>
-  </nav> 
-  </header>
+    </nav>
+  </header> 
 
   <main>
     <section class="hero">
+      <img src="./Image/Memoji_hello.png" alt="Avatar de Quentin Bernard" class="avatar">
       <div class="intro">
         <h1>BERNARD <span class="highlight">Quentin</span></h1>
         <p class="taf">Alternant développeur logiciel</p>
         <p><span class="age">20 ans</span></p>
         <button class="button" onclick="window.open('./mon_cv.pdf', '_blank');">Mon CV</button>
       </div>
-        <img src="./Image/Memoji_hello.png" alt="Avatar de Quentin Bernard" class="avatar">
     </section>
   </main>
   <footer>
