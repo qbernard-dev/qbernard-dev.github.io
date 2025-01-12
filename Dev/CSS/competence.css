@@ -32,3 +32,24 @@ a .button {
     color: white; 
     margin-top: 20px;
 }
+
+@media (max-width: 470px) {
+    .competence-section {
+        padding: 15px;
+        margin: 15px 15px;
+    }
+
+    .competence-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .competence-section p {
+        font-size: 0.9rem;
+    }
+
+    a .button {
+        width: 100%;
+        font-size: 1.1rem;
+        padding: 10px 0;
+    }
+}
