@@ -68,3 +68,44 @@ div p{
 .button:hover {
   transform: scale(1.0);
 }
+
+@media (max-width: 470px) {
+  /* Section principale */
+  h2 {
+      font-size: 1.5rem;
+  }
+
+  div p {
+      font-size: 0.9rem;
+      line-height: 1.5;
+  }
+
+  /* Formation */
+  .formation-item {
+      border-left: 2px solid var(--primary-color);
+      padding-left: 10px;
+  }
+
+  .formation-item h3 {
+      font-size: 1rem;
+  }
+
+  .formation-item span {
+      font-size: 0.9rem;
+  }
+
+  /* Skills */
+  .skills-grid {
+      grid-template-columns: 1fr; /* Une seule colonne */
+      gap: 15px; /* Plus d'espacement entre les éléments */
+  }
+
+  .skill-item {
+      font-size: 1rem;
+      padding: 10px;
+  }
+
+  .languages {
+      font-size: 0.8rem;
+  }
+}
