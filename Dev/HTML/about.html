@@ -27,7 +27,7 @@
             <a href="./mon_cv.pdf" target="_blank">CV</a>
             <button id="mode-toggle" class="button"></button>
         </nav>
-      </header> 
+    </header> 
 
     <section id="about">
         <div class="section">
@@ -61,25 +61,25 @@
             <h2>Skills</h2>
             <div class="skills-grid">
                 <div class="skill">
-                    <div class="skill-item button">Développement Web</div>
-                        <ul class="languages">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>PHP</li>
-                        </ul>
+                    <button class="skill-item button" id="btn-skill-1">Développement Web</button>
+                    <ul class="languages" id="languages-skill-1">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>PHP</li>
+                    </ul>
                 </div>
                 <div class="skill">
-                    <div class="skill-item button">Base de Données</div>
-                        <ul class="languages">
-                            <li>MySQL</li>
-                            <li>PostgreSQL</li>
-                            <li>MicrosoftSQL</li>
-                        </ul>
+                    <button class="skill-item button" id="btn-skill-2">Base de Données</button>
+                    <ul class="languages" id="languages-skill-2">
+                        <li>MySQL</li>
+                        <li>PostgreSQL</li>
+                        <li>MicrosoftSQL</li>
+                    </ul>
                 </div>
                 <div class="skill">
-                    <div class="skill-item button">Développement Logiciel</div>
-                    <ul class="languages">
+                    <button class="skill-item button" id="btn-skill-3">Développement Logiciel</button>
+                    <ul class="languages" id="languages-skill-3">
                         <li>C / C#</li>
                         <li>Java</li>
                         <li>Python</li>
@@ -87,23 +87,23 @@
                     </ul>
                 </div>
                 <div class="skill">
-                    <div class="skill-item button">Conception Maquette</div>
-                    <ul class="languages">
+                    <button class="skill-item button" id="btn-skill-4">Conception Maquette</button>
+                    <ul class="languages" id="languages-skill-4">
                         <li>Figma</li>
                         <li>Adobe</li>
                     </ul>
                 </div>
                 <div class="skill">
-                    <div class="skill-item button">Logiciels Informatiques</div>
-                    <ul class="languages">
+                    <button class="skill-item button" id="btn-skill-5">Logiciels Informatiques</button>
+                    <ul class="languages" id="languages-skill-5">
                         <li>Visual Studio / Code</li>
                         <li>Jet Brain</li>
                         <li>Eclipse</li>
                     </ul>
                 </div>
                 <div class="skill">
-                    <div class="skill-item button">Versioning</div>
-                    <ul class="languages">
+                    <button class="skill-item button" id="btn-skill-6">Versioning</button>
+                    <ul class="languages" id="languages-skill-6">
                         <li>GitHub</li>
                         <li>GitLab</li>
                     </ul>
@@ -120,5 +120,26 @@
         </div>
         <p>&copy; 2025 Quentin Bernard</p>
       </footer>
-    </body>
+
+    <script>
+        document.getElementById('btn-skill-1').addEventListener('click', function() {
+            document.getElementById('languages-skill-1').classList.toggle('show');
+        });
+        document.getElementById('btn-skill-2').addEventListener('click', function() {
+            document.getElementById('languages-skill-2').classList.toggle('show');
+        });
+        document.getElementById('btn-skill-3').addEventListener('click', function() {
+            document.getElementById('languages-skill-3').classList.toggle('show');
+        });
+        document.getElementById('btn-skill-4').addEventListener('click', function() {
+            document.getElementById('languages-skill-4').classList.toggle('show');
+        });
+        document.getElementById('btn-skill-5').addEventListener('click', function() {
+            document.getElementById('languages-skill-5').classList.toggle('show');
+        });
+        document.getElementById('btn-skill-6').addEventListener('click', function() {
+            document.getElementById('languages-skill-6').classList.toggle('show');
+        });
+    </script>
+</body>
 </html>

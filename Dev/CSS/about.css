@@ -65,6 +65,10 @@ div p{
 }
 
 /* Button */
+.button{
+  width: 100%;
+}
+
 .button:hover {
   transform: scale(1.0);
 }
